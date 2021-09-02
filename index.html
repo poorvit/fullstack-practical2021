@@ -7,78 +7,100 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        background-color: rgba(128, 128, 128, 0.658);
-    }
-    
-    .block
-    {
-        width:20%;
-        float:left;
-        text-align: justify;
-        padding:20px;
-        margin-right:20px;
-        margin-top:80px;
-        background-color: honeydew;
-        border-radius:10px;
+body{
+    color:rgb(15, 1, 1);
+    text-align: center;
+    font-size:40px;
+}
+.header{
+    height:50px;
+    background-color: grey;
+}
+.banner{
+    background-color:skyblue;
+    height:300px;
+}
 
-    }
-    h1
-    {
-        font-size: medium;
-        text-align: center;
-    }
-    .container
-    {
-        display: block;
-        clear: both;
-        margin : 0px -5px;
-    }
-    .button
-    {
-        text-align: center;
-        background-color:rgba(0, 60, 255, 0.61);
-        padding:5px 10px;
-        margin:0 auto;
-        border-radius:10px;
-        
-    }
-    .button:hover
-    {
-        background-color: rgba(255, 81, 0, 0.562);
-    }
-    a
-    {
-        text-decoration: none;
-    }
+.section-1{
+    height:250px;
+    margin:auto auto;
+    text-align: center;
+}
+.circle
+{
+    width:200px ;
+    height:200px;
+    border-radius:50%;
+    margin:20px 40px;
+    float: left;
+    background-color:orange;
+}
+.section-2{
+    height:650px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content{
+    width:600px;
+    height:600px;
+    background-color: gray;
+    float: left;
+}
+.artical{
+    width:600px ;
+    height:170px;
+    float:right;
+    margin-bottom:40px;
+    background-color:rgb(207, 84, 27);
+}
+.section-3{
+    height:250px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.squares{
+    background-color:orangered;
+    width:200px ;
+    height: 200px;
+    margin: 40px;
+    float: left;
+}
+.section-4{
+    
+    margin-top:100px;
+    text-align: center;
+}
+.footer
+{
+    height:50px;
+    background-color:pink;
+}
 
 </style>
 <body>
-    <div class="container">
-        <div class="block">
-            <div class="image"><img src="./html.jfif" alt=""style="width:250px;height:150px; border-radius:10px;"></div>
-            <h1>Introduction to HTML</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque modi et quae magnam optio cum officia assumenda, ea sequi nesciunt illo consequatur dolorem placeat voluptas earum iusto labore, aperiam quasi iur.
-            <div class="button"><a href="./html.html">Read more</a></div>
-        </div>
-        <div class="block">
-            <div class="image"><img src="./css.jfif" alt="" style="width:250px;height: 150px; border-radius:10px;"></div>
-            <h1>Introduction to CSS</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque modi et quae magnam optio cum officia assumenda, ea sequi nesciunt illo consequatur dolorem placeat voluptas earum iusto labore, aperiam quasi iur.
-            <div class="button"><a href="./css.html">Read more</a></div>
-        </div>
-        <div class="block">
-            <div class="image"><img src="./jquery.png" alt=""style="width:250px;height: 150px; border-radius:10px;"></div>
-            <h1>Introduction to Javascript</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque modi et quae magnam optio cum officia assumenda, ea sequi nesciunt illo consequatur dolorem placeat voluptas earum iusto labore, aperiam quasi iur.
-            <div class="button"><a href="./jquery.html">Read more</a></div>
-        </div>
-        <div class="block">
-            <div class="image"><img src="./bootstrap.jfif" alt=""style="width:250px;height: 150px; border-radius:10px;"></div>
-            <h1>Introduction to Bootstrap</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque modi et quae magnam optio cum officia assumenda, ea sequi nesciunt illo consequatur dolorem placeat voluptas earum iusto labore, aperiam quasi iur.
-            <div class="button"><a href="./bootstrap.html">Read more</a></div>
-        </div>
+    <div class="header">Header</div>
+    <div class="banner">Banner</div>
+    <div class="section-1">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="section-2">
+        <div class="content">Main Content</div>
+        <div class="artical">Artical-1</div>
+        <div class="artical">Artical-2</div>
+        <div class="artical">Artical-3</div>
+    </div>
+    <div class="section-3">
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+        <div class="squares"></div>
+    </div>
+    <div class="section-4">
+        <div class="footer">Footer</div>
     </div>
 </body>
 </html>
