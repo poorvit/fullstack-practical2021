@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Practical 8</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2.5px;
+    word-spacing: 1px;
+    color: white;
+  }
+  
+  .container {
+    width: 96%;
+    margin: auto;
+  }
+  
+  /* header section */
+  
+  header {
+    position: fixed;
+    width: 96%;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #12232e;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: inline;
+    padding: 10px 20px;
+    margin: 15px;
+  }
+  
+  li:hover {
+    background-color: #007cc7;
+  }
+  
+  /* end of header section */
+  
+  /* banner section */
+  
+  .banner {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  #title {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    font-size: 55px;
+  }
+  
+  #home {
+    background-color: #007cc7;
+  }
+  
+  img {
+    width: 100%;
+    display: inline;
+  }
+  
+  /* end of banner section */
+  
+  /* about us section */
+  
+  .about-us {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #12232e;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  p {
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .about-us-body {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .about-projects {
+    background-color: #007cc7;
+    width: 65%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .projects {
+    margin-left: 10px;
+    width: 25%;
+  }
+  
+  .project {
+    margin: 10px 5px;
+  }
+  
+  /* end of about us section */
+  
+  /* teams section */
+  .teams {
+    background-color: #12232e;
+  }
+  
+  #team-members {
+    display: inline-flex;
+  }
+  
+  .circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: lightsalmon;
+  }
+  
+  #circle1 {
+    margin: 90px;
+    background-image: url(../images/user18.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #circle2 {
+    margin: 90px;
+    background-image: url(../images/user2.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #circle3 {
+    margin: 90px;
+    background-image: url(../images/user3.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #circle4 {
+    margin: 90px;
+    background-image: url(../images/user4.png);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* end of teams section  */
+  
+  /* technologies section */
+  
+  .technologies {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  
+  .card {
+    width: 22%;
+    margin: 2%;
+    background-color: #12232e;
+  }
+  
+  .card:hover {
+    box-shadow: 5px 5px #203647;
+  }
+  
+  .image {
+    border-radius: 20px;
+    padding: 3px;
+    display: block;
+    width: 100%;
+  }
+  
+  .para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  button {
+    background-color: #4da8da;
+    border: none;
+    padding: 10px;
+  }
+  
+  button:hover {
+    background-color: #007cc7;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  
+  p {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  /* end of technologies section */
+
+  /* footer section */
+
+footer {
+    width: 100%;
+    height: 90px;
+    background-color: #12232e;
+    padding: 20px 0px;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <a href="#banner">
+                    <li id="home">HOME</li>
+                </a>
+                <a href="#about-us">
+                    <li>ABOUT US</li>
+                </a>
+                <a href="#teams">
+                    <li>TEAM</li>
+                </a>
+                <a href="#technologies">
+                    <li>TECHNOLOGIES</li>
+                </a>
+                <a href="#contact">
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+        </header>
+
+        <div id="banner">
+            <img src="../images/background8.jpg" />
+            <p id="title">Practical - 8</p>
+        </div>
+
+        <div id="about-us" class="about-us">
+            <div class="about-us-heading">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-us-body">
+                <div class="about-projects">
+                    <h2>About Projects</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolores soluta vero
+                        praesentium
+                        labore, est numquam in! Corrupti quam, sit commodi accusantium ipsum rem, placeat quos incidunt
+                        tempora, officiis nobis.
+                    </p>
+
+                    <p>
+                        Perspiciatis dolorum dolor sint delectus, enim nesciunt illo ad. Incidunt obcaecati sed, minima
+                        corporis aperiam maxime veritatis recusandae perferendis, ipsam suscipit, sunt non facere quia?
+                        Natus quasi nulla atque nostrum!
+                        Quae labore sit voluptate voluptatibus sed exercitationem, recusandae reprehenderit excepturi
+                        doloremque sapiente facere aspernatur impedit voluptates voluptatem magni illo consequuntur,
+                        totam
+                        similique! Nam earum rem non eius magni sed alias!</p>
+
+                    <p>
+                        Magni, incidunt ex recusandae facilis nostrum, vero repudiandae maxime, ipsum ab exercitationem
+                        amet! Consequatur aspernatur, quis laboriosam nesciunt hic quo sequi quos eum earum quisquam
+                        eligendi optio tempora esse quidem!
+                        Amet ipsa rem sequi, earum dolore eos quibusdam iste labore laborum perferendis. Delectus sit
+                        sequi
+                        deserunt, odio eius fugiat nam enim eos eligendi, deleniti omnis perferendis id assumenda, rerum
+                        amet!
+                    </p>
+                </div>
+
+                <div class="projects">
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <img src="../images/HTML8.png" />
+                    </div>
+                    <div class="project">
+                        <h3>Project 2</h3>
+                        <img src="../images/css9.png" />
+                    </div>
+                    <div class="project">
+                        <h3>Project 3</h3>
+                        <img src="../images/JAVASCRIPT8.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="teams" class="teams">
+            <h1>Our Team</h1>
+            <div id="team-members">
+                <div class="circle" id="circle1">
+                </div>
+                <div class="circle" id="circle2">
+                </div>
+                <div class="circle" id="circle3">
+                </div>
+                <div class="circle" id="circle4">
+                </div>
+            </div>
+        </div>
+
+        <div id="technologies" class="technologies">
+            <div class="card">
+                <div class="image">
+                    <img src="../images/HTML8.png" />
+                </div>
+                <div class="para">
+                    <h3>Introduction to HTML</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolore aperiam aut necessitatibus perferendis ipsa?
+                        Natus, assumenda odio.
+                    </p>
+                    <p>...</p>
+                </div>
+                <div class="button">
+                    <a href="https://www.w3schools.com/"><button type="button">Read More</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../images/css9.png" />
+                </div>
+                <div class="para">
+                    <h3>Introduction to CSS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolore aperiam aut necessitatibus perferendis ipsa?
+                        Natus, assumenda odio.
+                    </p>
+                    <p>...</p>
+                </div>
+                <div class="button">
+                    <a href="https://www.w3schools.com/"><button type="button">Read More</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../images/JAVASCRIPT8.png" />
+                </div>
+                <div class="para">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolore aperiam aut necessitatibus perferendis ipsa?
+                        Natus, assumenda odio.
+                    </p>
+                    <p>...</p>
+                </div>
+                <div class="button">
+                    <a href="https://www.w3schools.com/"><button type="button">Read More</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="../images/NODEJS8.png" />
+                </div>
+                <div class="para">
+                    <h3>Introduction to Node Js</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Dolore aperiam aut necessitatibus perferendis ipsa?
+                        Natus, assumenda odio.
+                    </p>
+                    <p>...</p>
+                </div>
+                <div class="button">
+                    <a href="https://www.w3schools.com/"><button type="button">Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <p>CONTACT US</p>
+    </div>
+
+    <footer>
+        <p>Website template by &copy Poorvi Tiwari</p>
+    </footer>
+    </div>
+</body>
+
+</html>
